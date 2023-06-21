@@ -1,25 +1,29 @@
-.canvas{
-    display: block;
-    border: 1px solid black;
-    margin: auto;
-    background-color: #f1f8ff;
-  }
+/* SETUP */
+@import url("setup/variables.css");
+@import url("setup/typography.css");
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    grid-gap: 10px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-  
-.gallery img {
-    max-width: 100%;
-    height: auto;
-}
+/* BASICS */
+@import url("basics/base.css");
+@import url("basics/helpers.css");
+@import url("basics/layout.css");
 
-@media (max-width: 600px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
+/* COMPONENTS */
+@import url("components/header.css");
+@import url("components/gallery.css");
+@import url("components/meme.editor.css");
+
+/* MQ */
+@import url("basics/mq.css");
+
+
+
+
+
+
+
+
+
+
+
+
+

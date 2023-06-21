@@ -8,3 +8,9 @@ function onInit(){
     gCtx = gElCanvas.getContext('2d')
     renderMeme()
 }
+
+function logoClicked(){
+    hideCanvas()
+    showGallery()
+}
+

@@ -9,25 +9,33 @@
 </head>
 
 <body onload="onInit()">
-    <header>Header</header>
+    <header>
+        <a href="#" class="logo">
+            <img src="Logo/logo.png" onclick="logoClicked()">
+        </a>
+        <nav>
+
+        </nav>
+    </header>
 
     <section class="gallery">
-        
-        
-        
-        
+
+
+
+
     </section>
-    
-    
+
+
     <section class="editor">
         <div class="canvas-container">
             <canvas class="canvas" id="canvas" width="500" height="500"></canvas>
         </div>
-        
+
         <input type="text" id="text" name="text" placeholder="text" oninput="setLineTxt()" onchange="submitTxt()">
+        <a href="#" onclick="downloadMeme(this)" download="My-Meme">Download</a>
 
 
-        editor
+        
     </section>
 
 

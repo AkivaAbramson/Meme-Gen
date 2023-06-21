@@ -14,3 +14,11 @@ function renderMeme() {
         gCtx.fillText(gMeme.lines[0].txt, canvas.width / 2, 50)
     }
 }
+
+function downloadMeme(elLink) {
+    var ElCanvas = document.querySelector('#canvas')
+    const data = ElCanvas.toDataURL()
+    elLink.href = data
+    elLink.download = 'My-Meme'
+
+}
